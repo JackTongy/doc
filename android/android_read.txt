@@ -1,0 +1,7 @@
+——Facebook keyhash 
+keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
+
+
+—-android keystore
+keytool -genkey -alias android.keystore -keyalg RSA -validity 20000 -keystore android.keystore
+keytool -list -keystore "android.keystore" 输入你设置的keystore密码
