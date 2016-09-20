@@ -19,7 +19,31 @@ mysql study
 	创建数据库：create database 数据库名；
 	指定数据库：use 数据库名；
 	创建数据表：create table 表名(统一后缀_TBL)(表的元素)；
+
+
+4.How to insert data
+	insert into 表名(数据类型，即行的数据类型) values(数据)
+
+
+
+5.How to alter table
+	alter table 表名 modify 列的名称 数据类型 		//修改一列的数据类型，列的长度，有效位数或标度
+	alter table 表名 add    列的名称 数据类型		//添加一列
+	alter table 表名 drop   列的名称 数据类型		//删除列的约束
 	
+
+6.How to create a new table from a table
+	create table 新的表名 as select [*|column1, column2] from 表名；
+	特殊：microsoft sql server, select [*|column1, column2] into 新表名 from 表名；
+
+
+7.How to drop table
+	drop table 表名 [restrict|cascade];
+
+
+8.How to create constraint for table
+	主键约束（保证数据的完整性）：primary key
+	外键约束（和其他表建立联系）：foreign key
 
 
 
