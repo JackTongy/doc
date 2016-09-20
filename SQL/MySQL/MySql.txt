@@ -43,7 +43,8 @@ mysql study
 
 8.How to create constraint for table
 	主键约束（保证数据的完整性）：primary key
-	外键约束（和其他表建立联系）：foreign key
+	外键约束（和其他表建立联系）：foreign key   //外键的创建，alter table 外键表名 add constraint 约束键名 foreign key (主键) references 表名 （主键）
+	检查约束（）	       ：check
 
 
 
