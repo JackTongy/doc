@@ -1,0 +1,26 @@
+mysql study
+
+1.How to install mysql
+	把my.ini拷贝到mysql/bin目录下，把bin的目录加入到环境变量中。
+	管理员权限cd到bin目录下，使用命令(mysqld -install)安装mysql
+	初始化data目录，使用命令(mysqld —-initialize  —console)
+	启动MySQL服务，使用命令(net start mysql)
+
+
+2.How to change default root password
+	关闭正在运行的MySQL服务，net stop mysql
+	cd到bin目录下，mysqld —skip-grant-tables
+	再开一个终端，命令mysql
+	链接权限数据库，use mysql
+	使用命令 update user set authentication_string=password(‘新密码’) where user=‘root’
+	刷新权限 flush privileges,并退出
+
+3.How to use database
+	创建数据库：create database 数据库名；
+	指定数据库：use 数据库名；
+	创建数据表：create table 表名(统一后缀_TBL)(表的元素)；
+	
+
+
+
+
